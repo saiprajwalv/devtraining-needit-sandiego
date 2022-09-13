@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="other" max_length="40" name="other" type="string"/>
         <element attributes="encode_utf8=false" label="Requested for" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Request type" max_length="40" name="u_request_type" type="string">
             <choice>
@@ -8,6 +9,7 @@
                 <element inactive_on_update="false" label="It" sequence="1" value="2"/>
                 <element inactive_on_update="false" label="sales" sequence="2" value="3"/>
                 <element inactive_on_update="false" label="facilities" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="other" sequence="4" value="other"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" choice="1" label="what needed" max_length="40" name="u_what_needed" type="string">
